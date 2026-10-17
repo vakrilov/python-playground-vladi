@@ -66,14 +66,28 @@ Inside, you can use `mouse_x()`, `mouse_y()`, `mouse_down()`, `key_down("space")
 
 ---
 
-### For grown-ups: setup on a new computer
+## For grown-ups: setting it up (Mac)
 
-Needs [uv](https://docs.astral.sh/uv/):
+You don't need Python or anything else installed first.
+
+1. **Get the code.** Either:
+   - **Easiest:** click the green **Code** button at the top of this page, then **Download ZIP**, and unzip it.
+     Move the folder somewhere permanent, like Documents.
+   - **With [GitHub Desktop](https://desktop.github.com)** (makes updates easy):
+     File → Clone Repository → URL tab → paste `https://github.com/vakrilov/python-playground-vladi`.
+     Later, click **Fetch origin**, then **Pull**, to get new lessons.
+2. **Double-click `setup.command`** in the folder (needs internet). It installs
+   [uv](https://docs.astral.sh/uv/), which brings its own Python, installs pygame, and opens Lesson 1.
+   If macOS says it can't verify the file, go to **System Settings → Privacy & Security** and click **Open Anyway**.
+3. **Install [VS Code](https://code.visualstudio.com)**, open the folder (File → Open Folder),
+   and install the **Python** extension when it asks. Then press ▶ on any lesson.
+
+Already have uv, or using Linux? Run this from the project folder:
 
 ```
 uv venv --python 3.12
 uv pip install -e .
 ```
 
-`drawing.py` is a small wrapper around [pygame](https://www.pygame.org). When he outgrows it,
-he can use pygame directly.
+`drawing.py` is a small wrapper around [pygame](https://www.pygame.org). Once a learner outgrows it,
+they can switch to pygame directly.
